@@ -1,57 +1,57 @@
 <?php
 
-abstract class Personage {
-	abstract public function Property(); 
-	abstract public function About_You(); 
-}
+// abstract class Personage {
+// 	abstract public function Property(); 
+// 	abstract public function About_You(); 
+// }
 
-class Butch_Cassidy extends Personage implements Bandit {
+// class Butch_Cassidy extends Personage implements Bandit {
 
-	public function Property(){
-		echo("Property: You are the leader of a bandit group.");
-	}
-	public function Shoot (){
-		echo("BANG! BANG!");
-	}
-	public function Rob_the_Bank (){
-		echo("Bags of money!!!");
-	}
-	public function About_You(){
-		echo("I am Butch Cassidy!");
-	} 
-}
+// 	public function Property(){
+// 		echo("Property: You are the leader of a bandit group.");
+// 	}
+// 	public function Shoot (){
+// 		echo("BANG! BANG!");
+// 	}
+// 	public function Rob_the_Bank (){
+// 		echo("Bags of money!!!");
+// 	}
+// 	public function About_You(){
+// 		echo("I am Butch Cassidy!");
+// 	} 
+// }
 
-class Suzy_Lafayette extends Personage {
-	public function Property(){
-		echo("Property: You have the fastest reload in the Wild West.");
-	}
-	public function About_You(){
-		echo("I am Suzy Lafayette!");
-	}
-}
+// class Suzy_Lafayette extends Personage {
+// 	public function Property(){
+// 		echo("Property: You have the fastest reload in the Wild West.");
+// 	}
+// 	public function About_You(){
+// 		echo("I am Suzy Lafayette!");
+// 	}
+// }
 
-class Billy_Kid extends Personage {
+// class Billy_Kid extends Personage {
 
-	public function Property(){
-		echo("Property: You own the fastest shooting in the Wild West.");
-	}
-	public function About_You(){
-		echo("I am ! Billy Kid! ");
-	}
+// 	public function Property(){
+// 		echo("Property: You own the fastest shooting in the Wild West.");
+// 	}
+// 	public function About_You(){
+// 		echo("I am ! Billy Kid! ");
+// 	}
 
-}
+// }
 
 
 
-interface Low {	
-	public function Shoot ();
-	public function wear_the_badge ();
-}
-interface Bandit {
-	public function Shoot ();
+// interface Low {	
+// 	public function Shoot ();
+// 	public function wear_the_badge ();
+// }
+// interface Bandit {
+// 	public function Shoot ();
 
-	public function Rob_the_Bank ();
-}
+// 	public function Rob_the_Bank ();
+// }
 
 
 $Butch_Cassidy = new Butch_Cassidy;
