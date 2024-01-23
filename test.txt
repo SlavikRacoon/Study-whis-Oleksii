@@ -1,1 +1,29 @@
-test
+git add -A 
+Update the index not only where the working tree has a file matching <pathspec> but also where the index already has an entry. This adds, modifies, and removes index entries to match the working tree.
+
+If no <pathspec> is given when -A option is used, all files in the entire working tree are updated (old versions of Git used to limit the update to the current directory and its subdirectories)
+
+git commit 
+git-commit - Record changes to the repository
+
+If you make a commit and then find a mistake immediately after that, you can recover from it with git reset.
+
+git push
+
+git-push - Update remote refs along with associated objects
+
+Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+
+You can make interesting things happen to a repository every time you push into it, by setting up hooks there. See documentation for git-receive-pack[1].
+
+When the command line does not specify where to push with the <repository> argument, branch.*.remote configuration for the current branch is consulted to determine where to push. If the configuration is missing, it defaults to origin.
+
+git stash
+
+Stash the changes in a dirty working directory away
+
+Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+The modifications stashed away by this command can be listed with git stash list, inspected with git stash show, and restored (potentially on top of a different commit) with git stash apply. Calling git stash without any arguments is equivalent to git stash push. A stash is by default listed as "WIP on branchname …​", but you can give a more descriptive message on the command line when you create one.
+
+The latest stash you created is stored in refs/stash; older stashes are found in the reflog of this reference and can be named using the usual reflog syntax (e.g. stash@{0} is the most recently created stash, stash@{1} is the one before it, stash@{2.hours.ago} is also possible). Stashes may also be referenced by specifying just the stash index (e.g. the integer n is equivalent to stash@{n}).
